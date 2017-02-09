@@ -29,7 +29,10 @@ makeCircle(185, 10, 15, "yellow", 0.80)
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+ makeRect(0, 70, 400, 30, "brown", 0.33)
+makeRect(15, 50, 30,30, "red", 1)
+makePolygon("50,10 15,50 45,50", "purple", 0.15)
+makeCircle(185, 10, 15, "yellow", 0.80)   
 }
 
 
@@ -44,9 +47,12 @@ if(myNumber< 0.33){
 createFirstScene()
 }else if{
     (myNumber< 0.33)
-    createSecondScene{
+    createSecondScene
+}else if{
+    (myNumber< 0.55)
+    createThirdScene
 }
-}
+    }
 // DO NOT EDIT ANYTHING BELOW THIS LINE!
 // These are the functions you should call to
 // easily create shapes in JavaScript. Feel free
