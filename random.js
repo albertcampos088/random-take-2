@@ -18,18 +18,24 @@ makeCircle(185, 10, 15, "yellow", 0.80)
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-makeRect(0, 70, 400, 30, "white", 0.33)
+
+makeRect(0, 70, 400, 30, "white", 1)
 makeRect(15, 50, 30,30, "red", 1)
 makePolygon("50,10 15,50 45,50", "purple", 0.15)
 makeCircle(185, 10, 15, "yellow", 0.80)
+makeCircle(100, 60, 10, "white", 1)
+makeCircle(100, 50, 7, "white", 1)
+makeCircle(100, 40, 6, "white", 1)
+makeCircle(100, 60, 1, "black", 1)
+makeCircle(100, 65, 1, "black", 1)
+makeCircle(100, 50, 1, "black", 1)
 }
-
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createThirdScene() {
- makeRect(0, 70, 400, 30, "brown", 0.33)
+function createThi50rdScene() {
+ makeRect(0, 70, 400, 30, "brown", 1)
 makeRect(15, 50, 30,30, "red", 1)
 makePolygon("50,10 15,50 45,50", "purple", 0.15)
 makeCircle(185, 10, 15, "yellow", 0.80)   
@@ -45,12 +51,10 @@ function createRandomScene() {
  var myNumber = Math.random()
 if(myNumber< 0.33){
 createFirstScene()
-}else if{
-    (myNumber< 0.33)
-    createSecondScene
-}else if{
-    (myNumber< 0.55)
-    createThirdScene
+}else if (myNumber<0.67){
+    createSecondScene()
+}else{
+    createThirdScene()
 }
     }
 // DO NOT EDIT ANYTHING BELOW THIS LINE!
